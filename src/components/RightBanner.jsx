@@ -4,7 +4,7 @@ import SearchBar from './SearchBar'
 
 const RightBanner = () => {
     
-  const [search, setSearch]  = useState("mumbai")
+  const [search, setSearch]  = useState("Chennai")
   const [loading,setLoading] = useState(false)
   const [weatherData, setWeatherData] = useState(null)
   
@@ -54,10 +54,12 @@ const RightBanner = () => {
           handleClick={handleClick}
          />
        </div>
-       <div className='flex h-[80%] bg-[#c8e9a7]  w-full absolute  md:relative '>
-        <div className='bg-[#FF9800] w-[250px] sm:w-[300px] md:w-[250px] lg:w-[280px] h-[410px]  left-[20%] sm:left-[50%] centered  rounded-2xl  '>  
+       <div className=' flex items-center justify-center  m-auto h-[80%]  bg-[#c8e9a7]  w-full   py-2 '>
+        <div className='bg-[#FF9800] w-[250px] sm:w-[310px] md:w-[260px] lg:w-[290px] h-[410px] 
+            rounded-2xl mt-[-30px] md:mt-[-35px]'>  
            </div>
-           <div className='bg-[#2C7865] w-[250px] sm:w-[300px] md:w-[260px] lg:w-[280px] h-[420px]  left-[10%] sm:left-[25%] overlay md:left-[20%] lg:left-[24%]   rounded-2xl  '>
+           <div className='bg-[#2C7865] w-[250px] sm:w-[310px] md:w-[270px] lg:w-[290px] h-[420px] 
+              rounded-2xl ml-[-270px] sm:ml-[-330px] md:ml-[-290px] lg:ml-[-310px] mt-[10px]'>
              {loading ? 
               <div  className='flex justify-center items-center flex-col  pt-4'>
           <div className='flex flex-col items-center'>
@@ -101,7 +103,7 @@ const RightBanner = () => {
                 <img src={cloud} className='w-[150px] text-center relative -top-14'   alt="Cloud" />
               </div>
           </div>
-          <div className='grid grid-cols-3 gap-4 px-2 '>
+          <div className='grid grid-cols-3 gap-4 px-3 sm:px-2 '>
               <div className='text-center text-white  font-semibold'>
                   <h3>Humidity</h3>
                   <p>{weatherData?.main?.humidity + "%"}</p>
@@ -115,7 +117,7 @@ const RightBanner = () => {
                   <p>{weatherData?.main?.pressure}</p>
               </div>
           </div>
-          <div  className='text-3xl font-bold text-gradient2  pt-5 '>
+          <div  className='text-3xl font-bold text-gradient2  pt-5 text-center'>
           {weatherData && weatherData.weather[0] ? weatherData.weather[0].description : ""}
           </div>
           

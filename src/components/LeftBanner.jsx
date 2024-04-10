@@ -21,7 +21,9 @@ const LeftBanner = () => {
         </div>
         <div className=' flex flex-col   items-center   gap-10 '>
           <h2 className='text-4xl  sm:text-5xl text-center md:text-start  font-bold sm:w-[450px] md:w-[380px] lg:w-[500px] text-gray-600'>Weather and Forecast Application</h2>
-           <p className=' w-[260px]  sm:w-[500px]  md:w-[350px] lg:w-[500px]  text-gray-600'>Lorem ipsum dolor, sit amet consectetur adipisi  ada rock uh vanthalum break uh vanthalum shake aagathu tamil gana paattu cisperiores non. ivalyaaro chanthiran magalo </p> 
+           <p className=' w-[260px]  sm:w-[500px]  md:w-[350px] lg:w-[500px]  text-gray-600'>
+           Welcome to Weather Hub, your go-to destination for accurate and reliable weather information. Whether you're planning your day, a weekend getaway, or a long-term trip,
+            we've got you covered with comprehensive weather forecasts and real-time updates. </p> 
         </div>
         
     </div>
